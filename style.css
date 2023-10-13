@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background :linear-gradient(135deg , #153677 , #4e085f);
+    padding: 10px;
+}
+h3{
+    color: #153677 ;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card{
+    width: 30%;
+    min-width: 240px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.card h3 img{
+    width: 50px;
+    margin-left: 2px;
+    margin-bottom: -10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:  #153677;
+    color:#fff;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor:pointer;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor:pointer;
+    color: #4e085f;
+    position:relative;
+}
+
+ul li::before{
+   
+    content:'';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color:  #153677;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/check-circle.png);
+
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color:  #153677;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+   
+    background-color: #4e085f ;
+    color: white;
+}
+
+
+h5{
+    color: #fff;
+    font-size: small;
+    text-align: end;
+    
+}

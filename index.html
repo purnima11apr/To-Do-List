@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todoist - to remember things</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=64&id=43648&format=png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3><i class="fa-solid fa-list" style="color: #4e085f;"></i> TO-DO-LIST <img src="images/icon.png"></h3>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your list">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list">
+               <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li>-->
+            </ul>
+        </div>
+
+        <h5>Made With <i class="fa-solid fa-heart" style="color: #bd8bdf;"></i>  by Purnima Chaudhary</h5>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
